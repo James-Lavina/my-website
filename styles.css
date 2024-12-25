@@ -1,0 +1,265 @@
+*{
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  color: #001011;
+}
+
+body {
+  background-image: url(assets/scattered-forcefields.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  margin: 30px 0px;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 60px 0 60px;
+}
+
+.nav-logo span, main span {
+  color: #C84630;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  font-weight: 600;
+  color: #001011;
+  padding: 5px 15px 5px 15px;
+  transition: 0.3s ease;
+}
+
+nav li a:hover{
+  background-color: #C84630;
+  color: #FFFDFD;
+  border-radius: 100px;
+}
+
+
+nav li a:active{
+  opacity: 0.6;
+}
+
+/* Home Page*/
+
+.main-content {
+  max-width: 500px;
+  padding: 10% 0% 10% 16%;
+}
+
+.main-content p {
+  font-weight: 500;
+}
+
+.main-div {
+  display: flex;
+}
+
+.main-img {
+  width: 300px;
+  position: absolute;
+  right: 250px;
+  bottom: 200px;
+  transition: 0.5s ease;
+}
+
+.main-img:hover {
+  transform: scale(1.2);
+}
+
+/* About Page */
+
+.about-div {
+  display: flex;
+  align-items: center;
+  padding: 10% 0 10% 16%;
+}
+
+.about-img {
+  width: 300px;
+  border-radius: 30% 70% 30% 70% / 70% 35% 65% 30%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.about-img:hover {
+  transform: scale(1.2);
+  box-shadow: 20px 20px #C84630;
+}
+
+.about-img:active {
+  transform: rotateZ(3deg);
+}
+
+.about-content {
+  max-width: 500px;
+  padding-left: 100px;
+}
+
+.about-content p {
+  font-weight: 500;
+}
+
+.about-content a {
+  color: #001011;
+}
+
+/*Artist*/
+
+.artist-title {
+  padding: 40px 150px;
+}
+
+.artist-box {
+  border: 3px solid #C84630;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  transition: 0.3s ease;
+  font-weight: 500;
+  background-color: #FFFDFD;
+  box-shadow: 5px 5px 10px;
+  width: 150px;
+  height: 200px;
+  justify-content: center;
+  color: #001011;
+}
+
+.artist-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 15px;
+}
+
+.artist-container {
+  margin: 20px 40px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.artist-box:hover {
+  transform: scale(1.1);
+  box-shadow: 8px 8px
+}
+
+.artist-box:active {
+  transform: rotate(3deg); 
+  box-shadow: 5px 5px 10px
+}
+
+/*Games*/
+
+.game-title {
+  padding: 2% 14% 0 14% ;
+}
+
+.game-container {
+  border: 3px solid #C84630;
+  display: flex;
+  border-radius: 20px;
+  height: 180px;
+  box-shadow: 0px 8px 32px 0 rgba(0, 0, 0, 0.30);
+}
+
+.game-content {
+  padding: 20px 30px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0px 17px 17px 0;
+}
+
+.game-img {
+  width: 200px;
+  border-radius: 17px 0 0 17px;
+  object-fit: cover;
+}
+
+.game-div {
+  margin: 40px 260px;
+}
+
+
+/*Contacts*/
+
+.contact-content h1 {
+  text-align: center;
+  font-size: 35px;
+  padding: 30px 0px;
+}
+
+input {
+  width: 60%;
+  height: 20px;
+  margin-left: 18%;
+  font-size: 18px;
+  padding: 13px 13px;
+  border-radius: 10px;
+  border-color: #001011;
+  margin-bottom: 16px;
+}
+
+textarea {
+  width: 60%;
+  height: 100px;
+  margin-left: 18%;
+  font-size: 18px;
+  padding: 13px 13px;
+  border-radius: 10px;
+  border: 2px solid #001011;
+  margin-bottom: 16px;
+}
+
+input:focus-within {
+  outline: none;
+  border-color: #C84630;
+  border-width: 2px;
+}
+
+textarea:focus-within {
+  outline: none;
+  border-color: #C84630;
+  border-width: 2px;
+}
+
+button {
+  background-color: #FFFDFD;
+  border-radius: 20px;
+  border-color: #001011;
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  padding: 7px 16px;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  opacity: 80%;
+  cursor: pointer;
+  border-color: #C84630;
+}
+
+.contact-content {
+  border: 2.5px solid #C84630;
+  border-radius: 20px;
+  margin: 50px 380px; 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.30);
+}
